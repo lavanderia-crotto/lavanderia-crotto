@@ -272,8 +272,9 @@
     aspect-ratio:4/3;border-radius:var(--radius-md);
     background:var(--bg-surface);border:1px solid var(--color-border);box-shadow:var(--shadow-card);
     display:flex;align-items:center;justify-content:center;color:var(--color-ink-soft);font-weight:700;
-    text-align:center;padding:16px;
+    text-align:center;padding:16px;overflow:hidden;position:relative;
   }
+  .gallery-item img{width:100%;height:100%;object-fit:cover;display:block;border-radius:var(--radius-md);}
   @media (min-width:720px){ .gallery-item{flex-basis:32%;} }
 
   /* ---------- Ubicación ---------- */
@@ -478,7 +479,7 @@
         <h2>Así trabajamos</h2>
       </div>
       <div class="gallery-track" tabindex="0" role="region" aria-label="Galería de fotos del local, desplazable horizontalmente">
-        <div class="gallery-item">Foto 1<br>local / mostrador</div>
+        <div class="gallery-item"><img src="img/local-fachada.jpg" alt="Frente de Lavandería Crotto en Uribelarrea" loading="lazy"></div>
         <div class="gallery-item">Foto 2<br>máquinas de lavado</div>
         <div class="gallery-item">Foto 3<br>ropa lista para entrega</div>
         <div class="gallery-item">Foto 4<br>equipo de trabajo</div>
